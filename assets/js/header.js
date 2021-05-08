@@ -1,11 +1,15 @@
 function openSearch() {
-    document.getElementById("myOverlay").style.display = "block";
     document.getElementById("searchInput").focus();
 }
 
+function openSearch() {
+    var element = document.getElementById("myOverlay");
+    element.classList.add("active");
+  } 
 function closeSearch() {
-    document.getElementById("myOverlay").style.display = "none";
-}
+    var element = document.getElementById("myOverlay");
+    element.classList.remove("active");
+ }
 
 function openMenu() {
     document.getElementById("mobileMenu").style.right = "0";
