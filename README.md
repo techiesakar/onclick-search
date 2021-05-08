@@ -1,3 +1,5 @@
-Simple onClick Search overlay with Search Content
+# search-overlay
+This is simple onclick search overlay with Some editor's picks content
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/69514e05-726d-45a9-a9ba-eee67e365959/deploy-status)](https://techiesakar-onclick-search.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/006d80b2-fed6-4262-82a6-9ee4b7f72694/deploy-status)](https://techiesakar-search-overlay.netlify.app/)
