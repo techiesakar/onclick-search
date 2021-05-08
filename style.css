@@ -1,0 +1,62 @@
+@import "assets/fonts/Sofia/sofia.css";
+@import url('assets/css/global.css');
+@import url('assets/css/header.css');
+@import url('assets/css/search.css');
+
+
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Default */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: 0.3s ease all;
+}
+
+h1,
+h2 {
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px 0;
+    letter-spacing: -0.04em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+code,
+pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+/* Default Ends */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}

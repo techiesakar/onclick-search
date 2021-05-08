@@ -1,0 +1,112 @@
+.full-overlay {
+    background-color:rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 1060;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.full-overlay .search-container {
+    background-color: var(--light-color);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.full-overlay .form-wrapper {
+    margin-top: 50px;
+    padding: 30px 150px;
+}
+
+.full-overlay .search-form {
+    background-color: #fff;
+    padding: 0.5rem 10px;
+    flex-basis: 95%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.full-overlay .search-icon {
+    font-size: 18px;
+    padding: 8px;
+    color: var(--primary-color);
+}
+
+.full-overlay .search-field {
+    width: 100%;
+    padding: 4px 14px;
+    line-height: 38px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #444;
+}
+
+.full-overlay .search-btn {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 18px;
+    outline: none;
+    padding: 12px 28px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.full-overlay .search-btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.full-overlay .closebtn {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.full-overlay .closebtn:hover {
+    color: var(--link-color);
+}
+
+/* Article Wrapper Starts */
+.full-overlay .article-wrapper.grid-12 {
+    /* margin-top: 50px; */
+    padding: 0 150px;
+}
+
+.full-overlay .article-wrapper h3 {
+    margin-left: 14px;
+    color: var(--secondary-color);
+}
+
+.full-overlay .article-wrapper a {
+    padding: 0 14px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 0.25px;
+}
+
+.full-overlay .article-wrapper a:hover {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.full-overlay .article-wrapper a:hover h4{
+    color: var(--link-color);
+}
+.full-overlay .article-wrapper h4 {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.full-overlay .article-wrapper p {
+    color: #696b6c;
+    margin-bottom: 20px;
+    letter-spacing: 0.25px;
+}

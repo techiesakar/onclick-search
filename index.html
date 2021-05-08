@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08ee8b8de4.js" crossorigin="anonymous"></script>
+    <title>Overlay Search Box with Content</title>
+</head>
+
+<body class="home">
+    <header class="header">
+        <div class="container grid">
+            <div class="logo">
+                <a href="" class="logo-link unselectable">
+                    <!-- <img src="" alt=""> -->
+                    <h1 class="site-name">
+                        <span class="site-name-first">Blogie</span>
+                        <span class="site-name-last">Tech</span>
+                    </h1>
+                </a>
+            </div>
+            <nav id="site-nav" class="main-nav">
+                <ul class="primary-menu">
+                    <li class="nav-item"><a class="active nav-link" href="">Home</a></li>
+                    <li class="nav-item has-sub-menu"><a class="main-menu nav-link" href="">BCA</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">
+                                <a class="nav-link" href="">Sub Menu 1</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="nav-link" href="">Sub Menu 2</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="nav-link" href="">Sub Menu 3</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="nav-link" href="">Sub Menu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="main-menu nav-link" href="">Wordpress</a></li>
+                    <li class="nav-item"><a class="main-menu nav-link" href="">How To</a></li>
+                </ul>
+            </nav>
+            <div class="search openBtn"> <i onclick="openSearch()" class="search-icon fas fa-search"></i></div>
+
+        </div>
+
+    </header>
+    <!-- Search Overlay Starts -->
+    <div id="myOverlay" class="full-overlay">
+        <div class="container search-container">
+            <div class="form-wrapper flex">
+                <form class="search-form flex">
+                    <i class="search-icon fas fa-search"></i>
+                    <input class="search-field" placeholder="What you are searching for ?" type="search" autofocus="">
+                    <input class="search-btn" type="submit" value="Search">
+                </form>
+                <div class="closebtn" role="button" onclick="closeSearch()">X</div>
+            </div>
+            <div class="article-wrapper grid-12">
+                <h3>Most Searched Articles</h3>
+                <a href="#">
+                    <div>
+                        <h4>10 Best Free Blogging Sites to Build Your Blog for Free in 2021: Tested, Compared and
+                            Reviewed</h4>
+                        <p>Looking for some free blog sites to help you start sharing your writing with the world?
+                            Whether you just ...</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h4>How to Create and Start a WordPress Blog in 15 Minutes or Less (Step by Step)</h4>
+                        <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent solution
+                            for how to start a ...</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                        <p>There’s plenty of space on the internet for everybody. People love to share ideas, give shape
+                            to their thoughts, ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article-wrapper grid-12">
+                <h3>Most Recent Articles</h3>
+                <a href="#">
+                    <div>
+                        <h4>How to Make a WordPress Website: Step-by-Step Guide for Beginners</h4>
+                        <p>Believe it or not, but knowing how to make a website from scratch is one of the more
+                            essential skills you ....</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h4>6 Fastest WordPress Hosting Companies Compared (Real Test Data)</h4>
+                        <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent solution
+                            for how to start a ...</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                        <p>There’s plenty of space on the internet for everybody. People love to share ideas, give shape
+                            to their thoughts, ...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search Overlay Ends -->
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
