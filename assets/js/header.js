@@ -1,5 +1,6 @@
 function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("searchInput").autofocus;
 }
 
 function closeSearch() {
