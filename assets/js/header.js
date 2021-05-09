@@ -5,21 +5,22 @@ function openSearch() {
 function openSearch() {
     var element = document.getElementById("myOverlay");
     element.classList.add("active");
-  } 
+}
+
 function closeSearch() {
     var element = document.getElementById("myOverlay");
     element.classList.remove("active");
- }
+}
 
 function openMenu() {
     document.getElementById("mobileMenu").style.right = "0";
-    document.getElementById("menuBtn").style.visibility="hidden";
+    document.getElementById("menuBtn").style.visibility = "hidden";
 
 }
 
 function closeMenu() {
     document.getElementById("mobileMenu").style.right = "-100%";
-    document.getElementById("menuBtn").style.visibility="visible";
+    document.getElementById("menuBtn").style.visibility = "visible";
 }
 var x = 0;
 

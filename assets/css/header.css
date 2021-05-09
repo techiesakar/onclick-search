@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -165,7 +164,7 @@
 
 
 .header .mobile-menu {
-    padding: 30px 10px 30px 20px;
+    padding: 80px 10px 30px 40px;
     position: fixed;
     flex-direction: column;
     background-color: rgba(18, 21, 25, .98);
@@ -181,22 +180,14 @@
     position: absolute;
     top: 15px;
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     right: 20px;
     cursor: pointer;
-    background-color: rgba(29, 64, 151, 0.712);
-    border-radius: 4px;
-    padding: 4px;
-    height: 28px;
-    width: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mobile-menu .menuclose:hover {
-    background-color: rgba(7, 74, 245, 0.753);
+    color: var(--link-color);
 }
 
 .header .mobile-menu {
